@@ -1,0 +1,16 @@
+{
+  "name": "snowpack-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "d3": "^6.5.0",
+    "snowpack": "^3.0.11"
+  }
+}
