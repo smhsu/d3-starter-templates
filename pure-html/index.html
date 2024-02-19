@@ -6,12 +6,36 @@
   <meta name="description" content="D3 starter template">
   <meta name="author" content="">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="reset.css">
 </head>
 
 <body>
-  <p>Modify this HTML file as you see fit.  Don't forget to read the README!</p>
+  <header class="header">
+    <h1 class="header-text">Political Landscape 2020</h1>
+  </header>
+  
+  <main>
+    <div class="visualization-container">
+      <!-- brandon here is your visualization -->
+      <svg width="300" height="100"></svg>
+    </div>
+    <div class="content">
+      <p>This is an overview of Trump vs. Biden support comparison in 2020. You can choose different parameters like sentiment for both presidents, etc.</p>
+      <label for="parameter-select">Choose a parameter:</label>
+      <select id="parameter-select" name="parameters">
+        <option value="sentiment">Sentiment</option>
+        <option value="state">State</option>
+        <option value="retweets">Retweets</option>
+      </select>
+    </div>
+    
+  </main>
+  
+  <footer  class="footer">
+    <h1 class="footer-text">&copy; Made by Aadarsh, Brandon, Nikita for CS467.</h1>
+  </footer>
+
   <script src="https://d3js.org/d3.v6.min.js"></script>
   <script src="index.js"></script>
-  <svg width="300" height="100"></svg>
 </body>
 </html>

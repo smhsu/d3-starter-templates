@@ -1,1 +1,83 @@
-/* Insert your global CSS here. */
+    body, html {
+        height: 100dvh;
+    }
+    
+    .header, .footer {
+        text-align: center;
+        padding: 30px;
+        background-color: #f3f3f3;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: row;
+        height: calc(100dvh - 152px);
+    }
+
+    .header-text {
+        font-size: 32px;
+        font-weight: 900;
+    }
+
+    .footer-text {
+        font-size: 24px;
+        font-weight: 900;
+    }
+    
+    .visualization-container, .content {
+        flex: 1;
+    }
+    
+    .visualization-container {
+        width: 50%;
+    }
+  
+  
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .content {
+    text-align: center; /* Centers the text and contents within '.content' */
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+    .content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333; 
+    max-width: 400px;
+    }
+
+    .content label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #666;
+    }
+
+    .content select {
+    display: block; 
+    margin: 0 auto 20px; 
+    padding: 10px; 
+    font-size: 14px;
+    color: #333;
+    background-color: #fff; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    width: 50%;
+    cursor: pointer;
+    }
+
+    /* Optional: Improve select appearance on hover */
+    .content select:hover {
+    border-color: #999;
+    }
+  
